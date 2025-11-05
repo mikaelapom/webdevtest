@@ -1,0 +1,204 @@
+<!-- Mikaela -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/w3css/4/w3.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="logo">
+      <img
+        src="Images/bannerOption2.png"
+        alt="Purple Couch Logo"
+      />
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <div class="w3-bar w3-center custom-nav">
+      <!-- Desktop Menu Items (hidden on small screens) -->
+      <div class="menu-center w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
+        <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
+        <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
+        <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
+        <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
+          >Authors & Artisans</a
+        >
+      </div>
+
+      <!-- Hamburger Icon (only visible on small screens) -->
+      <button
+        class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
+        aria-controls="smallMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Collapsible Mobile Menu -->
+    <div
+      id="smallMenu"
+      class="w3-bar-block w3-hide w3-hide-medium w3-hide-large w3-center custom-mobile-menu"
+      aria-hidden="true"
+    >
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
+      <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
+      <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
+      <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
+      <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
+        >Authors & Artisans</a
+      >
+    </div>
+
+
+    <!-- page wrapper to support sidevar -->
+    <div class="page-wrapper">
+      <main class="main-content">
+        <header>
+          <h2>About Us</h2>
+          <p>Find out when we're open and how to get in touch with us!</p>
+        </header>
+
+        <section class="services-grid w3-container">
+          <div class="service-card w3-animate-opacity">
+            <h5><b>Where Can You Find Us?</b></h5>
+            <p>
+              If you’d like to see us in person, we are at the North Andover
+              Mall. You can pop in before you do your grocery shopping at Market
+              Basket or pick up some fancy new duds at TJ Maxx. We’re nestled
+              between Salon Vergados and Gentle Dental. All of our new neighbors
+              have been great and we hope you’ll visit them too.
+            </p>
+
+            <img
+              src="Images/Purple-Couch-Ribbon-Cutting.jpg"
+              alt="Ribbon Cutting"
+              class="w3-image w3-round-large w3-border"
+            />
+
+            <hr />
+
+            <p>
+              You can order physical books from us on-line on Bookshop.org.
+              There you can find staff picks and award winner lists along with
+              your friends’ and families’ wish lists or teachers’ registries.
+            </p>
+            <a
+              href="https://bookshop.org/shop/purplecouch"
+              class="book-btn"
+            >
+              📖 Find us on Bookshop.org
+            </a>
+
+            <hr />
+
+            <p>
+              If you love audio books but still want to support us, you can also
+              check out Libro.FM. It’s a wonderful alternative to Audible that
+              offers a huge selection and a similar subscription program.
+            </p>
+            <a
+              href="https://libro.fm/purplecouchbookshop"
+              class="book-btn"
+            >
+              🎧 Find us on Libro.FM
+            </a>
+
+            <hr>
+            <p>
+              We also carry Warhammer. Spectacular battles, extraordinary characters, limitless creativity! Warhammer encompasses a variety of tabletop games, miniatures, universes, and stories. There are loads of ways to enjoy Warhammer with something for everyone. 
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar w3-card">
+        <h3 class="sidebar-title">Store Info</h3>
+
+        <div class="w3-container">
+          <h4 class="sidebar-heading">Our Store Hours</h4>
+          <p>Mondays: 10am – 6pm</p>
+          <p>Tuesdays: 10am – 6pm</p>
+          <p>Wednesdays: 10am – 6pm</p>
+          <p>Thursdays: 10am – 8pm</p>
+          <p>Fridays: 10am – 6pm</p>
+          <p>Saturdays: 10am – 6pm</p>
+          <p>Sundays: 12pm – 6pm</p>
+
+          <hr />
+
+          <h4 class="sidebar-heading">Our Online Bookshops</h4>
+          <p>
+            <a
+              href="https://bookshop.org/shop/purplecouch"
+              class="sidebar-link"
+              >Bookshop.org</a
+            ><br />
+            <a
+              href="https://libro.fm/purplecouchbookshop"
+              class="sidebar-link"
+              >Libro.fm</a
+            >
+          </p>
+
+          <hr />
+
+          <h4 class="sidebar-heading">Contact</h4>
+          <p>978-557-2187</p>
+
+          <hr>
+
+          <h4 class="sidebar-heading">Connect With Us</h4>
+          <div class="w3-center w3-margin-top social-icons">
+            <a href="mailto:info@purplecouchbookshop.com" class="w3-button w3-round w3-hover-deep-purple w3-small" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://facebook.com/purplecouchbookshop" target="_blank" class="w3-button w3-round w3-hover-deep-purple w3-small" title="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com/purplecouchbookshop" target="_blank" class="w3-button w3-round w3-hover-deep-purple w3-small" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://threads.net/@purplecouchbookshop" target="_blank" class="w3-button w3-round w3-hover-deep-purple w3-small" title="Threads">
+              <i class="fa-brands fa-threads"></i>
+            </a>
+          </div>
+
+          <hr>
+
+          <h4 class="sidebar-heading">
+            <a
+              href="https://thepurplecouchbookshop.bookstoreloyalty.com/subscribe"
+              class="book-btn"
+            >
+              Mailing List
+            </a>
+
+          </h4>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>
+        Purple Couch Bookshop | 350 Winthrop Ave Suite 9B, North Andover, MA |
+        978-557-2187
+      </p>
+    </footer>
+  </body>
+</html>

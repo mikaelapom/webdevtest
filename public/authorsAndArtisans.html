@@ -1,0 +1,203 @@
+<!-- Mikaela -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Authors & Artisans</title>
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="Images/bannerOption2.png"
+        alt="Purple Couch Logo"
+      />
+    </div>
+
+        <!-- Top Navigation Bar -->
+    <div class="w3-bar w3-center custom-nav">
+      <!-- Desktop Menu Items (hidden on small screens) -->
+      <div class="menu-center w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
+        <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
+        <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
+        <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
+        <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
+          >Authors & Artisans</a
+        >
+      </div>
+
+      <!-- Hamburger Icon (only visible on small screens) -->
+      <button
+        class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
+        aria-controls="smallMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Collapsible Mobile Menu -->
+    <div
+      id="smallMenu"
+      class="w3-bar-block w3-hide w3-hide-medium w3-hide-large w3-center custom-mobile-menu"
+      aria-hidden="true"
+    >
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
+      <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
+      <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
+      <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
+      <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
+        >Authors & Artisans</a
+      >
+    </div>
+
+
+    <header>
+      <h2>
+        Authors & Artisans
+      </h2>
+      <p>
+        Read about some of the amazing authors and artisans we feature at
+        Purple Couch Bookshop!
+      </p>
+    </header>
+
+    <!-- Add section for featured authors -->
+    <section class="authors-grid">
+      <div class="authors-card">
+        <h2>Sue Halpern</h2>
+        <img src="Images/Sue.webp" alt="Sue Halpern" />
+        <p>
+          Author of <i>What We Leave Behind</i>
+        </p>
+      </div>
+
+      <div class="authors-card">
+        <h2>Jenny Howe</h2>
+        <img src="Images/jenny-l-howe.png" alt="Jenny Howe" />
+        <p>
+          Author of <i>Love At Full Tilt</i>
+        </p>
+      </div>
+
+      <div class="authors-card">
+        <h2>Stephanie Gayle</h2>
+        <img src="Images/stephanie.webp" alt="Stephanie Gayle" />
+        <p>
+          Author of <i>Idyll Hands</i>
+        </p>
+      </div>
+
+      <div class="authors-card">
+        <h2>Katie Kennedy</h2>
+        <img src="Images/katie.webp" alt="Katie Kennedy" />
+        <p>
+          Author of <i>The history Of Gossip</i>
+        </p>
+      </div>
+
+      <div class="authors-card">
+        <h2>James Bird</h2>
+        <img src="Images/jamesbird.webp" alt="James Bird" />
+        <p>
+          Author of <i>The Brave</i>
+        </p>
+      </div>
+
+      <div class="authors-card">
+        <h2>Richard Osman</h2>
+        <img src="Images/richardosman.webp" alt="Richard Osman" />
+        <p>
+          Author of <i>The Thursday Murder Club</i>
+        </p>
+      </div>
+    </section>
+
+      <div class="authorsinfo-card">
+        <p>
+          Part of our mission is to promote curiosity and a love of learning about the world around us. With that comes a desire to find new books and new creations that we love, that astound us, that make us think, that make us feel, and that leave us wanting more.
+        </p>
+        <p>
+          We aspire to be known as a place that shares local talent and keeps local creativity alive amidst the big box stores and algorithmically generated experiences. We want to showcase the works of authors and artisans from the Merrimack Valley and surrounding area.
+        </p>
+        <p>
+          Please tell us a bit about you, what you create, and how you see us working together to promote it.
+        </p>
+
+        <p><strong>Please note:</strong></p>
+        <ul class="authorsinfo-list">
+          <li>We provide limited space for local artisans on a consignment basis.</li>
+          <li>Independently-published authors must be available through Ingram.</li>
+        </ul>
+        <!-- <img src="Images/OIP (2).webp" alt="bookshop"> -->
+
+      <div class="authorsinfo-form">
+        <form id="authorsForm" action="/services/handl-form" method="POST">
+          <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>
+              Name (required): 
+              <input type="text" name="name" maxlength="50" required />
+            </label>
+            <br />
+
+            <label>
+              Email (required): 
+              <input type="email" name="email" maxlength="70" required />
+            </label>
+            <br />
+
+            <label>
+              Phone Number: 
+              <input type="text" name="phone_number" maxlength="15"/>
+            </label>
+            <br />
+
+            <label>
+              Please tell us where you live:
+              <br />
+              <textarea name="location" rows="2" cols="50"></textarea>
+            </label>
+            <br />
+
+            <label>
+              Tell us about your work:
+              <br />
+              <textarea name="work" rows="5" cols="50"></textarea>
+            </label>
+            <br />
+
+            <label>
+              What are your ideas for working with us on marketing and selling your work?
+              <br />
+              <textarea name="marketing_ideas" rows="3" cols="50"></textarea>
+            </label>
+            <br />
+            
+          </fieldset>
+
+          <input type="submit" value="Submit form" />
+          <div id="formMessage"></div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Purple Couch Bookshop | 350 Winthrop Ave Suite 9B, North Andover, MA | 978-557-2187
+      </p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

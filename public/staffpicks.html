@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Picks – Purple Couch Bookshop</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="Images/bannerOption2.png" alt="Purple Couch Logo" />
+    </div>
+
+        <!-- Navigation -->
+        <!-- Top Navigation Bar -->
+    <div class="w3-bar w3-center custom-nav">
+      <!-- Desktop Menu Items (hidden on small screens) -->
+      <div class="menu-center w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
+        <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
+        <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
+        <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
+        <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
+          >Authors & Artisans</a
+        >
+      </div>
+
+      <!-- Hamburger Icon (only visible on small screens) -->
+      <button
+        class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
+        aria-controls="smallMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Collapsible Mobile Menu -->
+    <div
+      id="smallMenu"
+      class="w3-bar-block w3-hide w3-hide-medium w3-hide-large w3-center custom-mobile-menu"
+      aria-hidden="true"
+    >
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
+      <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
+      <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
+      <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
+      <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
+        >Authors & Artisans</a
+      >
+    </div>
+
+
+    <!-- Header -->
+    <header>
+      <h2>Staff Picks</h2>
+      <p>Books we love and recommend to you</p>
+    </header>
+
+    <!-- Staff Picks Grid -->
+    <section class="authors-grid">
+      <div class="staff-card">
+        <h2>Dead and Alive Essays</h2>
+        <img src="Images/book1.jpg" alt="The Midnight Library" />
+        <p>by Zadie Smith</p>
+        <p>
+          A moving story about choices, regrets, and the infinite possibilities
+          of life.
+        </p>
+        <p>Staff Member: Wesley Burcham</p>
+      </div>
+
+      <div class="staff-card">
+        <h2>The Everlasting</h2>
+        <img src="Images/book2.jpg" alt="Circe" />
+        <p>by Alix E. Harrow</p>
+        <p>
+          A lyrical retelling of Greek mythology through the eyes of a powerful
+          sorceress.
+        </p>
+        <p>Staff Member: Ivan Liang</p>
+      </div>
+
+      <div class="staff-card">
+        <h2>The Black Wolf</h2>
+        <img src="Images/book3.jpg" alt="Klara and the Sun" />
+        <p>by Louise Penny</p>
+        <p>
+          A haunting exploration of love, humanity, and artificial intelligence.
+        </p>
+        <p>Staff Member: Mikaela Pomfret</p>
+      </div>
+    </section>
+
+    <div class="info-card">
+      <p> 💜 We rotate these picks monthly...so stay tuned for more! 💜 </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Purple Couch Bookshop | 350 Winthrop Ave Suite 9B, North Andover, MA |
+        978-557-2187
+      </p>
+    </footer>
+  </body>
+</html>

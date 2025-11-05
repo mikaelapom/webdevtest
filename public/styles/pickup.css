@@ -1,0 +1,104 @@
+/* Pickup form styles: compact two-column layout */
+.pickup-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+  align-items: start;
+  margin-top: 12px;
+  max-width: 920px;
+}
+.pickup-form .form-row {
+  display: flex;
+  flex-direction: column;
+}
+.pickup-form .form-row.full {
+  grid-column: 1 / -1;
+}
+.pickup-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+.pickup-form input[type="text"],
+.pickup-form input[type="tel"],
+.pickup-form input[type="email"],
+.pickup-form input[type="date"],
+.pickup-form textarea {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+}
+.pickup-form textarea {
+  resize: vertical;
+}
+.form-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.form-actions .btn {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}
+.btn.primary {
+  background: #6b2b75;
+  color: #fff;
+}
+.btn.secondary {
+  background: #f1f1f1;
+}
+.form-message {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* When the form is inside the authorsinfo backdrop, use the site's purple button style */
+.authorsinfo-form .btn.primary {
+  background-color: #381467;
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(56, 20, 103, 0.2);
+}
+.authorsinfo-form .pickup-form {
+  background: transparent;
+  padding: 0;
+}
+
+/* Use authors form input styles when inside the authors backdrop */
+.authorsinfo-form .pickup-form input,
+.authorsinfo-form .pickup-form textarea {
+  border: 1.5px solid #bba8d9;
+  border-radius: 8px;
+  padding: 10px;
+}
+.authorsinfo-form .pickup-form input:focus,
+.authorsinfo-form .pickup-form textarea:focus {
+  outline: none;
+  border-color: #7a56c5;
+  box-shadow: 0 0 6px rgba(122, 86, 197, 0.3);
+}
+
+/* Make form single-column on small screens */
+@media (max-width: 720px) {
+  .pickup-form {
+    grid-template-columns: 1fr;
+  }
+  .pickup-form .form-row.full {
+    grid-column: auto;
+  }
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Small tweaks to info cards */
+.info-card.small {
+  margin-top: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fafafa;
+}

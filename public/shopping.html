@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop – Purple Couch Bookshop</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/pickup.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="Images/bannerOption2.png" alt="Purple Couch Logo" />
+    </div>
+
+        <!-- Navigation -->
+        <!-- Top Navigation Bar -->
+    <div class="w3-bar w3-center custom-nav">
+      <!-- Desktop Menu Items (hidden on small screens) -->
+      <div class="menu-center w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
+        <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
+        <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
+        <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
+        <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
+          >Authors & Artisans</a
+        >
+      </div>
+
+      <!-- Hamburger Icon (only visible on small screens) -->
+      <button
+        class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
+        aria-controls="smallMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+      >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Collapsible Mobile Menu -->
+    <div
+      id="smallMenu"
+      class="w3-bar-block w3-hide w3-hide-medium w3-hide-large w3-center custom-mobile-menu"
+      aria-hidden="true"
+    >
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
+      <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
+      <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
+      <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
+      <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
+        >Authors & Artisans</a
+      >
+    </div>
+
+
+    <header>
+      <h2>Shop Our Books</h2>
+      <p>
+        Browse staff favorites, new releases, kids’ reads, gifts & Warhammer.
+      </p>
+    </header>
+
+    <main class="page-wrapper">
+      <section class="main-content">
+        <div class="info-card">
+          <p>
+            Use this form to request a pickup order. Fill in your contact
+            details and the book you'd like us to hold for pickup. We'll call or
+            email to confirm availability and the pickup time.
+          </p>
+        </div>
+
+        <div class="authorsinfo-form">
+          <form
+            id="pickupForm"
+            class="pickup-form"
+            aria-label="Pickup order form"
+          >
+            <div class="form-row">
+              <label for="custName"
+                >Full name<span aria-hidden="true"> *</span></label
+              >
+              <input id="custName" name="name" type="text" required />
+            </div>
+
+            <div class="form-row">
+              <label for="custPhone"
+                >Phone number<span aria-hidden="true"> *</span></label
+              >
+              <input
+                id="custPhone"
+                name="phone"
+                type="tel"
+                inputmode="tel"
+                placeholder="e.g. 978-555-1234"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="custEmail">Email address</label>
+              <input id="custEmail" name="email" type="email" />
+            </div>
+
+            <div class="form-row full">
+              <label for="bookTitle"
+                >Book title<span aria-hidden="true"> *</span></label
+              >
+              <input id="bookTitle" name="bookTitle" type="text" required />
+            </div>
+
+            <div class="form-row">
+              <label for="bookAuthor">Author (optional)</label>
+              <input id="bookAuthor" name="bookAuthor" type="text" />
+            </div>
+
+            <div class="form-row">
+              <label for="pickupDate">Preferred pickup date</label>
+              <input id="pickupDate" name="pickupDate" type="date" />
+            </div>
+
+            <div class="form-row full">
+              <label for="notes">Notes (optional)</label>
+              <textarea
+                id="notes"
+                name="notes"
+                rows="4"
+                placeholder="Any special instructions or notes"
+              ></textarea>
+            </div>
+
+            <div class="form-row form-actions full">
+              <button type="submit" class="btn primary">
+                Submit pickup request
+              </button>
+              <button type="reset" class="btn secondary">Clear</button>
+            </div>
+
+            <div
+              id="formMessage"
+              class="form-message"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </form>
+        </div>
+
+        <div class="info-card small">
+          <p>
+            Note: Orders are requests — we'll contact you to confirm
+            availability.
+          </p>
+        </div>
+      </section>
+
+      <aside class="sidebar w3-card">
+        <h3 class="sidebar-title">Quick Links</h3>
+        <p>
+          <a href="https://bookshop.org/shop/purplecouch"
+            >Shop on Bookshop.org</a
+          >
+        </p>
+        <p>
+          <a href="https://libro.fm/purplecouchbookshop">Shop on Libro.fm</a>
+        </p>
+        <hr />
+        <h4 class="sidebar-heading">Gift Cards</h4>
+        <p>Ask in-store or contact us to purchase a gift card.</p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Purple Couch Bookshop | 350 Winthrop Ave Suite 9B, North Andover, MA |
+        978-557-2187
+      </p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.PurpleCouch && PurpleCouch.initShop) {
+          PurpleCouch.initShop();
+        }
+      });
+    </script>
+    <script>
+      // Pickup form handling: saves requests to localStorage under 'pc_pickup_orders'
+      (function () {
+        const form = document.getElementById("pickupForm");
+        const msg = document.getElementById("formMessage");
+
+        function loadOrders() {
+          try {
+            return JSON.parse(localStorage.getItem("pc_pickup_orders") || "[]");
+          } catch (e) {
+            return [];
+          }
+        }
+        function saveOrder(order) {
+          const list = loadOrders();
+          list.push(order);
+          localStorage.setItem("pc_pickup_orders", JSON.stringify(list));
+        }
+
+        if (!form) return;
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          msg.textContent = "";
+          const name = form.name.value.trim();
+          const phone = form.phone.value.trim();
+          const bookTitle = form.bookTitle.value.trim();
+          if (!name || !phone || !bookTitle) {
+            msg.textContent =
+              "Please complete required fields (name, phone, book title).";
+            msg.style.color = "crimson";
+            return;
+          }
+
+          const order = {
+            id: "o_" + Date.now(),
+            name,
+            phone,
+            email: form.email.value.trim(),
+            bookTitle,
+            bookAuthor: form.bookAuthor.value.trim(),
+            pickupDate: form.pickupDate.value || null,
+            notes: form.notes.value.trim(),
+            createdAt: new Date().toISOString(),
+          };
+
+          saveOrder(order);
+          msg.textContent =
+            "Thank you — your pickup request has been saved. We will contact you to confirm availability and pickup details.";
+          msg.style.color = "green";
+          form.reset();
+          // For store staff: orders are stored in localStorage; to view them open browser console and run:
+          // JSON.parse(localStorage.getItem('pc_pickup_orders')||'[]')
+        });
+      })();
+    </script>
+  </body>
+</html>
