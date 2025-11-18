@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Summer Reading – Purple Couch Bookshop</title>
         <link rel="stylesheet" href="styles/style.css" />
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
     </head>
-    <body>
-        <!-- Logo -->
-        <div class="logo">
-            <img src="Images/bannerOption2.png" alt="Purple Couch Logo" />
-        </div>
+<body>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="Images/bannerOption2.png" alt="Purple Couch Logo" />
+    </div>
 
-        <!-- Top Navigation Bar -->
-        <div class="w3-bar w3-center custom-nav">
-        <!-- Desktop Menu Items (hidden on small screens) -->
-        <div class="menu-center w3-hide-small">
-            <a href="index.html" class="w3-bar-item w3-button">Home</a>
-            <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
-            <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
-            <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
-            <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
-            <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
-            <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
-            >Authors & Artisans</a
-            >
-        </div>
-
-        <!-- Hamburger Icon (only visible on small screens) -->
-        <button
-            class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
-            aria-controls="smallMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            onclick="toggleMenu()"
+    <!-- Top Navigation Bar -->
+    <div class="w3-bar w3-center custom-nav">
+    <!-- Desktop Menu Items (hidden on small screens) -->
+    <div class="menu-center w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
+        <a href="shopping.html" class="w3-bar-item w3-button">Shop Our Books</a>
+        <a href="staffpicks.html" class="w3-bar-item w3-button">Staff Picks</a>
+        <a href="summerreading.html" class="w3-bar-item w3-button">Summer Reading</a>
+        <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
+        >Authors & Artisans</a
         >
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-        </div>
+    </div>
 
-        <!-- Collapsible Mobile Menu -->
-        <div
+    <!-- Hamburger Icon (only visible on small screens) -->
+    <button
+        class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large menu-toggle"
+        aria-controls="smallMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleMenu()"
+    >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    </div>
+
+    <!-- Collapsible Mobile Menu -->
+    <div
         id="smallMenu"
         class="w3-bar-block w3-hide w3-hide-medium w3-hide-large w3-center custom-mobile-menu"
         aria-hidden="true"
-        >
+    >
         <a href="index.html" class="w3-bar-item w3-button">Home</a>
         <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
         <a href="events.html" class="w3-bar-item w3-button">Events Calendar</a>
@@ -56,83 +59,82 @@
         <a href="authorsAndArtisans.html" class="w3-bar-item w3-button"
             >Authors & Artisans</a
         >
-        </div>
+    </div>
 
 
-        <header>
-            <h2>
-                Summer & School Reading
-            </h2>
+    <header>
+        <h2>
+            Summer & School Reading
+        </h2>
+        <p>
+            Our picks for educational reads all year!
+        </p>
+    </header>
+
+    <div class="w3-content w3-section">
+        <div class="summer-card">
             <p>
-                Our picks for educational reads all year!
+            We want to know what you’re reading and we want to give your kids some incentives to read even more. This summer, we’re changing the program a little bit to make it more fair for the older kids whose books are bigger.
             </p>
-        </header>
 
-        <div class="w3-content w3-section">
-            <div class="summer-card">
-                <p>
-                We want to know what you’re reading and we want to give your kids some incentives to read even more. This summer, we’re changing the program a little bit to make it more fair for the older kids whose books are bigger.
-                </p>
+            <hr />
 
-                <hr />
+            <h5>
+                <b>
+                This year we have a summer reading bingo sheet which you can download here.
+                </b>
+            </h5>
 
-                <h5>
-                    <b>
-                    This year we have a summer reading bingo sheet which you can download here.
-                    </b>
-                </h5>
-
-                <div class="pdf-card">
-                    <h4>Summer Reading Bingo</h4>
-                    <p>Check out our printable <strong>Summer Reading Bingo</strong> card below!</p>
-                    
-                    <div class="pdf-frame">
-                        <iframe 
-                        src="pdfs/Summer-Reading-Bingo.pdf" 
-                        width="100%" 
-                        height="600px">
-                        </iframe>
-                    </div>
-
-                    <div class="pdf-buttons">
-                        <button 
-                            class="pdf-btn view" 
-                            onclick="viewPDFFullscreen('/pdfs/Summer-Reading-Bingo.pdf')">
-                            🔍 View Fullscreen
-                        </button>
-
-                        <button 
-                            class="pdf-btn download" 
-                            onclick="downloadPDF('/pdfs/Summer-Reading-Bingo.pdf', 'Summer_Reading_Bingo.pdf')">
-                            ⬇️ Download PDF
-                        </button>
-                    </div>
+            <div class="pdf-card">
+                <h4>Summer Reading Bingo</h4>
+                <p>Check out our printable <strong>Summer Reading Bingo</strong> card below!</p>
+                
+                <div class="pdf-frame">
+                    <iframe 
+                    src="pdfs/Summer-Reading-Bingo.pdf" 
+                    width="100%" 
+                    height="600px">
+                    </iframe>
                 </div>
 
-                <hr />
+                <div class="pdf-buttons">
+                    <button 
+                        class="pdf-btn view" 
+                        onclick="viewPDFFullscreen('/pdfs/Summer-Reading-Bingo.pdf')">
+                        🔍 View Fullscreen
+                    </button>
 
-                <p>
-                    <!-- <img src="Images/IMG_1148-EDIT.jpg" alt="Purple Bears"> -->
-                For every five across, down, or diagonal, you get a bingo punch. At 5 bingos, kids age 6-12 will receive a free paperback for $10 or less and kids age 13-17, will receive a $10 credit toward the book of your choice. At 10 bingos, you will receive all that plus a Rocco stuffie as well. We wish we could go higher but we’ll go out of business if we give away too many books!
-                </p>
-
-                <p>
-                    Don’t forget to show your work so that we can give you credit. We need to know which books you read. The sheet has room on the back to list the books you read for each bingo. Get creative! For some books, you can cross off more than one box on the sheet. We’ll be checking your work when you turn in your sheets and we would love to see a wide variety from each kid.
-                </p>
-
-                <hr />
-                
+                    <button 
+                        class="pdf-btn download" 
+                        onclick="downloadPDF('/pdfs/Summer-Reading-Bingo.pdf', 'Summer_Reading_Bingo.pdf')">
+                        ⬇️ Download PDF
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <footer>
+            <hr />
+
             <p>
-                Purple Couch Bookshop | 350 Winthrop Ave Suite 9B, North Andover, MA |
-                978-557-2187
+                <!-- <img src="Images/IMG_1148-EDIT.jpg" alt="Purple Bears"> -->
+            For every five across, down, or diagonal, you get a bingo punch. At 5 bingos, kids age 6-12 will receive a free paperback for $10 or less and kids age 13-17, will receive a $10 credit toward the book of your choice. At 10 bingos, you will receive all that plus a Rocco stuffie as well. We wish we could go higher but we’ll go out of business if we give away too many books!
             </p>
-        </footer>
 
-        <script src="scripts/scripts.js"></script>
+            <p>
+                Don’t forget to show your work so that we can give you credit. We need to know which books you read. The sheet has room on the back to list the books you read for each bingo. Get creative! For some books, you can cross off more than one box on the sheet. We’ll be checking your work when you turn in your sheets and we would love to see a wide variety from each kid.
+            </p>
 
-   </body>
+            <hr />
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Purple Couch Bookshop | 350 Winthrop Ave Suite 9B, North Andover, MA |
+            978-557-2187
+        </p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+    </body>
 </html>

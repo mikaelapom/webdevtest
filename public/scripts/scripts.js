@@ -58,4 +58,4 @@ function toggleMenu() {
   menu.classList.toggle("w3-show");
   menu.setAttribute("aria-hidden", isShown ? "true" : "false");
   btn.setAttribute("aria-expanded", isShown ? "false" : "true");
-}
+} 
